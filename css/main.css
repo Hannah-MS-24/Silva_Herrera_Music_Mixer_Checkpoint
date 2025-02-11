@@ -50,7 +50,7 @@ body {
   align-items: center;
   width: 100%;
   height: 50px; 
-  background-color: #f0f8ff;
+  background-color: plum;
   border: 3px dashed #000000;
   border-radius: 8px;
 }
@@ -79,7 +79,7 @@ ul li a {
 }
 
 ul li a:hover {
-  color:#007BFF;
+  color:purple;
 }
 
 /* Icons */
@@ -160,7 +160,7 @@ ul li a:hover {
     align-items: center;
     width: 100%;
     height: 70px; 
-    background-color: #f0f8ff;
+    background-color: plum;
     border: 3px dashed #000000;
     border-radius: 8px;
   }
@@ -185,7 +185,7 @@ ul li a:hover {
   }
   
   ul li a:hover {
-    color:#007BFF;
+    color: purple;
   }
 
   /*Icons */ 
@@ -254,7 +254,7 @@ ul li a:hover {
     align-items: center;
     width: 100%;
     height: 75px; 
-    background-color: #f0f8ff;
+    background-color: plum;
     border: 3px dashed #000000;
     border-radius: 8px;
   }
@@ -279,7 +279,7 @@ ul li a:hover {
   }
   
   ul li a:hover {
-    color:#007BFF;
+    color:purple;
   }
 
   /*Icons */ 
