@@ -49,7 +49,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50px; /* Ajuste conforme necessário */
+  height: 50px; 
   background-color: #f0f8ff;
   border: 3px dashed #000000;
   border-radius: 8px;
@@ -58,7 +58,7 @@ body {
 #main-nav {
   margin-top: 20px;
   display: flex;
-  justify-content: center; /* Centraliza os itens do menu horizontalmente */
+  justify-content: center; 
   width: 100%;
 }
 
@@ -85,9 +85,38 @@ ul li a:hover {
   color:#007BFF;
 }
 
+/* Icons */
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.social-icons i {
+  font-size: 24px;
+  margin-right: 20px;
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: #007bff; 
+  transform: scale(1.2);
+  background-color: #007bff;
+  color: #fff;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
+  /* Geral */
+
   .grid-con {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -104,10 +133,14 @@ ul li a:hover {
     background-repeat: no-repeat; 
   }
 
+  /* Logo */
+
   .box {
     height: 100px; 
     margin-right: 10px;
   }
+
+  /* Menu */
 
   #main-logo {
     max-width: 150px; 
@@ -150,9 +183,38 @@ ul li a:hover {
   ul li a:hover {
     color:#007BFF;
   }
+
+  /*Icons */ 
+
+  .social-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .social-icons i {
+    font-size: 24px;
+    margin-right: 20px;
+    color: #333;
+    transition: color 0.3s, transform 0.3s;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icons i:hover {
+    color: #007bff; 
+    transform: scale(1.2);
+    background-color: #007bff;
+    color: #fff;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  /*Geral */ 
+
   .grid-con {
     max-width: 1600px;
     grid-column-gap: 20px;
@@ -165,10 +227,14 @@ ul li a:hover {
     background-repeat: no-repeat; 
   }
 
+  /* Logo */
+
   .box {
     height: 120px; 
     margin-right: 15px;
   }
+
+  /* Menu */
 
   #main-logo {
     max-width: 200px; 
@@ -211,4 +277,7 @@ ul li a:hover {
   ul li a:hover {
     color:#007BFF;
   }
+
+  /*Icons */ 
+
 }
