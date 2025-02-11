@@ -1,3 +1,4 @@
+/* Geral */
 .hidden {
   display: none;
 }
@@ -9,22 +10,30 @@ html, body {
 }
 
 body {
+  background-image: url(../images/backdrop.png); 
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  height: 100vh;
+  margin: 0;
   font-family: fantasy;
   font-size: 18px;
 }
 
+/* Logo */
 .box {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  width: 100%; /* Mantém a largura dentro da grid */
-  height: 80px; /* Define um tamanho fixo para a box */
+  margin-right: 20px;
+  width: 100%; 
+  height: 80px; 
 }
 
 #main-logo {
   width: 100%;
-  max-width: 200px; /* Ajuste o tamanho máximo da logo */
+  max-width: 100px; 
 }
 
 #main-logo img {
@@ -32,6 +41,36 @@ body {
   height: auto;
   display: block;
 }
+
+/* Menu */
+
+#main-nav {
+  margin-top: 20px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+ul li {
+  margin: 0 5px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 12px;
+  transition: color 0.3s ease; /* Corrigido: adicionado 's' para a transição */
+}
+
+ul li a:hover {
+  color:#007BFF;
+}
+
+/* Media Queries */
 
 @media screen and (min-width: 768px) {
   .grid-con {
@@ -43,12 +82,46 @@ body {
     padding: 0 15px;
   }
 
+  body {
+    background-image: url(../images/backdrop.png); 
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+  }
+
   .box {
-    height: 100px; /* Aumenta o espaço da logo */
+    height: 100px; 
+    margin-right: 10px;
   }
 
   #main-logo {
-    max-width: 250px; /* Aumenta o tamanho da logo */
+    max-width: 150px; 
+  }
+
+  #main-nav {
+    margin-top: 10px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  ul li {
+    margin: 0 10px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.3s ease; /* Corrigido aqui também */
+  }
+  
+  ul li a:hover {
+    color:#007BFF;
   }
 }
 
@@ -58,11 +131,46 @@ body {
     grid-column-gap: 20px;
   }
 
+  body {
+    background-image: url(../images/backdrop.png); 
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+  }
+
   .box {
-    height: 120px; /* Ainda mais espaço para a logo */
+    height: 120px; 
+    margin-right: 15px;
   }
 
   #main-logo {
-    max-width: 300px; /* Logo maior */
+    max-width: 200px; 
+  }
+
+  #main-nav {
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  ul li {
+    margin: 0 15px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  ul li a:hover {
+    color:#007BFF;
   }
 }
