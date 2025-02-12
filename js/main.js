@@ -19,3 +19,26 @@ icons.forEach(icon => {
 		}, 500);
 	});
 });
+
+const img = document.querySelector("#image-container img");
+
+function blinkImage() {
+	setInterval (() => {
+		img.style.opacity = img.style.opacity === "1" ? "0.3" : "1";
+
+	}, 500)
+}
+
+blinkImage();
+
+document.querySelectorAll("button").forEach(btn => {
+	btn.addEventListener("click", () => {
+		btn.style.transform = "scale(1.2)";
+		btn.style.backgroundColor = "gold";
+
+		setTimeout(() => {
+			btn.style.transform = "scale(1)";
+			btn.style.backgroundColor = "purple";
+		}, 300);
+	})
+})
