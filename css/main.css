@@ -4,7 +4,8 @@
 }
 
 html, body {
-  height: 100%;
+  height: auto;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -14,7 +15,7 @@ body {
   background-size: cover; 
   background-position: center center; 
   background-repeat: no-repeat; 
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   font-family: fantasy;
   font-size: 18px;
@@ -114,6 +115,48 @@ ul li a:hover {
   transition: transform 0.3s ease;
 }
 
+/* All Heads */
+
+#image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#image-container img {
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  display: block;
+  border-radius: 10px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+ /* Buttons */
+ #buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+ }
+
+ button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s background-color 0.3s;
+ }
+
+ button:hover {
+  background-color: #800080;
+  transform: scale(1.1);
+ }
+
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
@@ -146,7 +189,6 @@ ul li a:hover {
     max-width: 150px; 
   }
 
-  
   /* Menu */
 
   #main-nav {
@@ -214,6 +256,37 @@ ul li a:hover {
     background-color: #007bff;
     color: #fff;
   }
+
+  /* All Heads */
+
+  #image-container img {
+    max-width: 1000px;  
+  }
+
+  /*Buttons */ 
+
+ #buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+ }
+
+ button {
+  padding: 15px 20px;
+  font-size: 18px;
+  border: none;
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s background-color 0.3s;
+ }
+
+ button:hover {
+  background-color: #800080;
+  transform: scale(1.1);
+ }
 }
 
 @media screen and (min-width: 1200px) {
@@ -309,5 +382,34 @@ ul li a:hover {
   color: #fff;
 }
 
+/* All Heads */
 
+#image-container img {
+  max-width: 1400px;  
+}
+
+/*Buttons */ 
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+ }
+
+ button {
+  padding: 15px 20px;
+  font-size: 20px;
+  border: none;
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s background-color 0.3s;
+ }
+
+ button:hover {
+  background-color: #800080;
+  transform: scale(1.1);
+ }
 }
